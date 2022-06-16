@@ -1,0 +1,12 @@
+{
+	"name": "@aloysius-software-factory/array-sort-helper",
+	"version": "1.0.2",
+	"description": "",
+	"main": "ArraySorter.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"types": "ArraySorter.d.ts"
+}
