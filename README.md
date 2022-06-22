@@ -21,7 +21,7 @@ SortFunction is the simplest of the 3. It simply sorts an array of objects accor
 It takes 3 arguments: 
 1. *field* - a string containing the attribute name you want to sort the array with
 2. *reverse* - a boolean which denotes whether you want the array to be sorted in ascending or descending order. `true` means it will sort in ascending order. `false` means it will sort in descending order. 
-3. *conversion* - is a function that will be applied to each member to each array to transform it to another form. the input of the function is the value of the object's attribute (T[field])
+3. *conversion* - is a function that will be applied to each member to each array to transform it to another form. the input of the function is the value of the object's attribute (T[field]). Pass `null` if no conversion is needed. 
 
 ### SortFunctionMultiple
 SortFunctionMultiple is similar to SortFunction but it can sort the array using multiple attributes. 
@@ -33,7 +33,7 @@ SortFunctionMultiple is similar to SortFunction but it can sort the array using 
 It takes 3 arguments: 
 1. *fields* - an array of attribute names (string) to sort by. sorting will be applied in sequence
 2. *reverse* - a boolean which denotes whether you want the array to be sorted in ascending or descending order. `true` means it will sort in ascending order. `false` means it will sort in descending order. 
-3. *conversion* - is an array of function that will be applied to each member to each array to transform it to another form. The input of the function is the value of the object's attribute (T[field]). Each function will be applied to the corresponding attribute at the same index as fields
+3. *conversion* - is an array of function that will be applied to each member to each array to transform it to another form. The input of the function is the value of the object's attribute (T[field]). Pass `null` if no conversion is needed. Each function will be applied to the corresponding attribute at the same index as fields
 
 ### SortFunctionMultipleFieldAndDirection
 SortFunctionMultipleFieldAndDirection is similar to SortFunctionMultiple. It can sort the array using multiple attributes with multiple directions (e.g. sort by attribute X in ascending order then by attribute Y in descending order). 
@@ -45,4 +45,4 @@ SortFunctionMultipleFieldAndDirection is similar to SortFunctionMultiple. It can
 It takes 3 arguments: 
 1. *fields* - an array of attribute names (string) to sort by. sorting will be applied in sequence
 2. *reverse* - an array of boolean which denotes whether you want the array to be sorted in ascending or descending order. `true` means it will sort in ascending order. `false` means it will sort in descending order. The order is applied to the corresponding attribute at the same index as *fields*. 
-3. *conversion* - is an array of function that will be applied to each member to each array to transform it to another form. The input of the function is the value of the object's attribute (T[field]). Each function will be applied to the corresponding attribute at the same index as *fields*   
+3. *conversion* - is an array of function that will be applied to each member to each array to transform it to another form. The input of the function is the value of the object's attribute (T[field]). Pass `null` if no conversion is needed. Each function will be applied to the corresponding attribute at the same index as *fields*   
