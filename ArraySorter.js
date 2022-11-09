@@ -4,7 +4,7 @@
  * @param {boolean} reverse true (ascending) or false (descending)
  * @param {function} conversion optional. null if dont need to apply conversion function
  */
-function SortFunction(field, reverse, conversion) {
+export function SortFunction(field, reverse, conversion) {
 	//create function to get attribute (after conversion function)
 	const GetSortAttribute = conversion
 		? function (x) {
@@ -29,7 +29,7 @@ function SortFunction(field, reverse, conversion) {
  * @param {boolean} reverse
  * @param {Function[]} conversions
  */
-function SortFunctionMultiple(fields, reverse, conversions) {
+export function SortFunctionMultiple(fields, reverse, conversions) {
 	if (fields.length !== conversions.length)
 		throw "# of sorting fields and # of conversion functions does not match";
 
@@ -57,7 +57,7 @@ function SortFunctionMultiple(fields, reverse, conversions) {
  * @param {boolean[]} reverseDirections
  * @param {Function[]} conversion
  */
-function SortFunctionMultipleFieldAndDirection(
+export function SortFunctionMultipleFieldAndDirection(
 	fields,
 	reverseDirections,
 	conversions
@@ -82,9 +82,3 @@ function SortFunctionMultipleFieldAndDirection(
 		return res;
 	};
 }
-
-module.exports = {
-	SortFunction: SortFunction,
-	SortFunctionMultiple: SortFunctionMultiple,
-	SortFunctionMultipleFieldAndDirection: SortFunctionMultipleFieldAndDirection,
-};
