@@ -9,6 +9,10 @@
 	"author": "",
 	"license": "ISC",
 	"types": "ArraySorter.d.ts", 
+	"homepage": "https://github.com/aloyziuz/array-sort-helper",
+	"bugs": {
+		"url": "https://github.com/aloyziuz/array-sort-helper/issues"
+	},
 	"repository": {
 		"type": "git", 
 		"url": "https://github.com/aloyziuz/array-sort-helper"

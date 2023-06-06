@@ -3,7 +3,7 @@ A simple library to make sorting array of objects easier
 ## Install
 You can install this library via npm
 `npm i @aloysius-software-factory/array-sort-helper`
-# #How to use 
+## How to use 
 This package provides 3 functions: 
 * SortFunction
 * SortFunctionMultiple

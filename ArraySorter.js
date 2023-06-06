@@ -6,13 +6,13 @@
  */
 export function SortFunction(field, reverse, conversion) {
 	//create function to get attribute (after conversion function)
-	const GetSortAttribute = conversion
-		? function (x) {
-				return conversion(x[field]);
-		  }
+	const GetSortAttribute = conversion ? 
+		function (x) {
+			return conversion(x[field]);
+		}
 		: function (x) {
-				return x[field];
-		  };
+			return x[field];
+		};
 
 	reverse = !reverse ? 1 : -1;
 
