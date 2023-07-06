@@ -8,6 +8,7 @@ This package provides 3 functions:
 * SortFunction
 * SortFunctionMultiple
 * SortFunctionMultipleFieldAndDirection
+
 These functions will return a function that will be used as an argument when sorting array
 `array.sort(SortFunction('name', false, null);`
 

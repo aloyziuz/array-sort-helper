@@ -1,14 +1,15 @@
 {
 	"name": "@aloysius-software-factory/array-sort-helper",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "",
 	"main": "ArraySorter.js",
+	"types": "ArraySorter.d.ts", 
+	"files": ["README.md", "package.json", "ArraySorter.js", "ArraySorter.d.ts"],
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "",
 	"license": "ISC",
-	"types": "ArraySorter.d.ts", 
 	"homepage": "https://github.com/aloyziuz/array-sort-helper",
 	"bugs": {
 		"url": "https://github.com/aloyziuz/array-sort-helper/issues"
